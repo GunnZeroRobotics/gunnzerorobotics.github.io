@@ -1,2 +1,2 @@
-# gunnzerorobotics.github.io
+# Gunn Zero Robotics
 Official website for Gunn Zero Robotics.
