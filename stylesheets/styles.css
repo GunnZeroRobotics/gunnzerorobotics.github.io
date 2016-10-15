@@ -203,10 +203,44 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+#members .team-member {
+  position:relative;
+}
+
 #members img {
     width:-webkit-calc(100% - 4px);
     width:calc(100% - 4px);
     border-radius: 10px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -webkit-transition:all .1s linear;
+    -moz-transition:all .1s linear;
+    -o-transition:all .1s linear;
+    -ms-transition:all .1s linear
+}
+
+#members .who {
+  position:absolute;
+  z-index: 100;
+  top: 10px;
+  left: 10px;
+  color:white;
+  font-size: 13pt;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  -webkit-transition:all .1s linear;
+  -moz-transition:all .1s linear;
+  -o-transition:all .1s linear;
+  -ms-transition:all .1s linear
+}
+
+#members .team-member:hover img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+#members .team-member:hover .who {
+  color: #e74c3c;
 }
 
 /* Ungrid: The world's easiest, simplest grid */
